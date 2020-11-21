@@ -1,0 +1,15 @@
+siteapikey.admin_settings_form:
+    path: '/admin/config/system/site-information/siteapikey'
+    defaults:
+        _form: '\Drupal\siteapikey\Form\SiteApiForm'
+        _title: 'SiteApiForm'
+    requirements:
+        _permission: 'access administration pages'
+        
+siteapikey.nodeDisplay:
+    path: '/page_json/{apikey}/{nid}'
+    defaults:
+        _controller: '\Drupal\siteapikey\Controller\NodeJsonController::node_display'
+        _title: 'View Nodes'
+    requirements:
+        _access: 'TRUE'

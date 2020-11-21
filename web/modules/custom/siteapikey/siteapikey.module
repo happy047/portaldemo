@@ -1,0 +1,15 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+/**
+The below hook alters the Submit button text only for siteapikey form
+*/
+ function siteapikey_form_alter(&$form, FormStateInterface $form_state, $form_id){
+	if($form_id == 'siteapi_form'){
+		//get default value and check whether its empty or not
+		$default_sitekey_value = $form['siteapikey']['#default_value'];
+		//if not empty then change the submit button text
+		if(!empty($default_sitekey_value)){
+			$form['actions']['submit']['#value'] = t('Update Configuration');
+		} 
+	}
+}

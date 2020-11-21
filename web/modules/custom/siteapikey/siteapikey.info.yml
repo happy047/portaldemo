@@ -1,0 +1,5 @@
+name: Site Api Key
+type: module
+description: Enables a custom form which will retain a value which admin insert
+core: 8.x
+package: Custom
