@@ -1,4 +1,4 @@
-# portaldemo
+# portaldemos
 Drupal 8 setup done using composer
 Drupal 8 contrib modules downloaded using composer
 
@@ -14,7 +14,7 @@ Base Url Path : http://localhost/portaldemo/web
 
 Site Api key path : http://localhost/portaldemo/web/admin/config/system/site-information/siteapikey
 
-Custom json path for node display : http://localhost/portaldemo/web/page_json/qwerty/48
+Custom json paths for node display : http://localhost/portaldemo/web/page_json/qwerty/48
 
 Note: The custom path for can be dynamic. For eg. http://localhost/portaldemo/web/page_json/{siteapikey}/{nid}
       where {siteapikey} is the value of the site api key and {nid} is the node id of basic page. If Wrong {sitekey} value is
